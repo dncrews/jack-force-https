@@ -1,0 +1,17 @@
+{
+  "name": "olympus-force-https",
+  "version": "1.0.0",
+  "description": "Olympus Plugin to Force HTTPS",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Crews <dan.crews@vivintsolar.com>",
+  "license": "MIT",
+  "dependencies": {
+    "olympus-plugin": "^1.0.0"
+  },
+  "peerDependencies": {
+    "olympus": "^3.0.0-beta-2"
+  }
+}
