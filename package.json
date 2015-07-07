@@ -1,14 +1,14 @@
 {
-  "name": "olympus-force-https",
+  "name": "jack-force-https",
   "version": "1.0.0",
   "description": "Olympus Plugin to Force HTTPS",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dan Crews <dan.crews@vivintsolar.com>",
+  "author": "Dan Crews <crewsd@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "olympus-plugin": "^1.0.0"
+  "peerDependencies": {
+    "jack-stack": "^2.0.0"
   }
 }

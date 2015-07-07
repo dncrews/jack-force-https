@@ -1,15 +1,18 @@
-# olympus-force-https
-This Olympus Plugin is used to force HTTPS on all requests. Generally you will use this remotely, but not in localhost:
+# jack-force-https
+[![NPM version][npm-image]][npm-url]
+[![Downloads][downloads-image]][downloads-url]
+
+This Jack-Stack Plugin is used to force HTTPS on all requests. Generally you will use this remotely, but not in localhost:
 
 ```js
-var isEB = !!(~['production', 'staging', 'testing'].indexOf(process.env.NODE_ENV));
+var isDeployed = !!(~['production', 'staging', 'testing'].indexOf(process.env.NODE_ENV));
 
-if (isEB) {
-  olympus.use(require('olympus-force-https')());
-
-  //or
-  olympus.loadPlugins([
-    require('olympus-force-https')()
-  ]);
+if (isDeployed) {
+  jack.add(require('olympus-force-https'));
 }
 ```
+
+[npm-image]: https://img.shields.io/npm/v/jack-force-https.svg
+[npm-url]: https://www.npmjs.org/package/jack-force-https
+[downloads-image]: https://img.shields.io/npm/dm/jack-force-https.svg
+[downloads-url]: https://www.npmjs.org/package/jack-force-https
