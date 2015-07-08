@@ -1,6 +1,6 @@
 {
   "name": "jack-force-https",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Olympus Plugin to Force HTTPS",
   "main": "lib/index.js",
   "scripts": {
